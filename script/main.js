@@ -57,7 +57,7 @@ function setData(data) {
     initializeCarousel(container);
 }
 function fetchData(query) {
-    fetch(`http://api.weatherapi.com/v1/forecast.json?key=3a7dc66b91bc44a695e151042212905&q=${query}`)
+    fetch(`https://api.weatherapi.com/v1/forecast.json?key=3a7dc66b91bc44a695e151042212905&q=${query}`)
     .then(response => response.json())
     .then(data => setData(data));
 }
